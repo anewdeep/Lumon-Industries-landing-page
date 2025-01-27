@@ -1,5 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px red dashed;
 }
+
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+.justify {
+    text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.header-wrapper,
+.body-1 {
+  background-color: #235ba8;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+header .logo {
+  width: 200px;
+  height: auto;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  font-family: Michroma;
+}
+
+.body-1 {
+  padding-bottom: 50px;
+}
+
+.body-1-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: auto;
+  max-width: 1000px;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.description {
+  width: 355px;
+  height: 251.95px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.description button {
+    width: 200px;
+    background-color: #235ba8;
+    color: #fff;
+    font-size: 16px;
+    border: 2px #fff solid;
+    border-radius: 5px;
+    margin-top: auto;
+    padding: 6px 12px;
+}
+
+.description button:hover {
+    background-color: #fff;
+    color: #235ba8;
+}
+
+.description button:active {
+    transform: translateX(2px) translateY(2px);
+}
+
+.hero-img {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #1e2779;
+}
+
